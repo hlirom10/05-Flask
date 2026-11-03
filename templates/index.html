@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask application</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <!-- skjema for login, sender data til /login -->
+    <form action="{{url_for('login')}}" method="POST">
+        <!-- name må være det samme som i app.py -->
+        User: <input type="text" name="un"><br>
+        Pwd: <input type="password" name="pwd"><br>
+        ...
+    </form>
+    <!-- lenker til de andre sidene -->
+    <a href="/enternew">Create new user</a><br>
+    <a href="/list">Display all users</a>
+    
+</body>
+</html>

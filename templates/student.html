@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- skjema for ny bruker, sender data til /addrec -->
+    <form action="{{url_for('addrec')}}" method="POST">
+        <h3>Create user</h3>
+        Name<br>
+        <input type="text" name="un"><br>
+        Pwd<br>
+        <input type="password" name="pwd"><br>
+        <input type="submit" value="submit"><br>
+    </form>
+    
+</body>
+</html>
